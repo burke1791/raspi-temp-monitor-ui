@@ -33,5 +33,14 @@
 }
 
 .chart-main {
+  height: 370px;
   margin: auto;
+  width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+  .chart-main {
+    height: 300px;
+    width: 100%;
+  }
 }
