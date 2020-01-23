@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Temperature Monitor</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  </head>
+  <body>
+    <div class='main'>
+      <h1>Burkcules Apartment Status</h1>
+
+      <div class='cards'>
+        <div class='card'>
+          <h2>Living Room</h2>
+          <div class='card-data'>
+            <span id='latestTemp'></span>
+          </div>
+          <div class='card-last-updated'>
+            <span id='lastUpdate'></span>
+          </div>
+        </div>
+      </div>
+
+      <div class='chart-main' id='chartContainer' style='height: 370px; width: 80%;'></div>
+    </div>
+    
+
+    <!-- update the version number as needed -->
+    <script src='/__/firebase/7.7.0/firebase-app.js'></script>
+    <!-- include only the Firebase features as you need -->
+    <script src='https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js'></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script src='/__/firebase/init.js'></script>
+    <script src='https://canvasjs.com/assets/script/canvasjs.min.js'></script>
+    <script src='app.js'></script>
+  </body>
+</html>
