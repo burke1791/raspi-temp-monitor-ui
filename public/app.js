@@ -96,7 +96,7 @@ function fetchTemperatureData() {
       let tempF = convertToFahrenheit(data.temp);
 
       if (count == 0) {
-        let latestTemp = tempF;
+        let latestTemp = tempF.toFixed(2);
         let updatedAt = datetime;
 
         updateCards(latestTemp, updatedAt);
